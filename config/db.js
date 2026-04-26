@@ -1,13 +1,11 @@
 const mongoose = require("mongoose");
 
-const connection_string = "mongodb://localhost:27017/recipesDB";
-
 async function connectDB() {
   try {
-    await mongoose.connect(connection_string);
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("DB connected");
   } catch (error) {
-    console.error("DB connctoin error", error)
+    console.error("DB connection error", error);
   }
 }
 
