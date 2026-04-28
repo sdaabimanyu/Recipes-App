@@ -108,6 +108,7 @@ DELETE /recipes/:id
 
 ## 📮 Postman Documentation
 
+https://documenter.getpostman.com/view/33146726/2sBXqJJfp3
 All API endpoints are tested and documented using Postman.
 Postman collection JSON is included in the submission.
 
